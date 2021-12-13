@@ -1,0 +1,40 @@
+{
+  "mlbPlayerStats": {
+    "devo.us-east-1": {
+      "accountId": "11111111111",
+      "emailAddress": "mlbStatsFrontEnd+devo+us-east-1@something.com",
+      "partition": "aws"
+    },
+    "preProd.us-east-1": {
+      "accountId": "222222222222",
+      "emailAddress": "mlbStatsFrontEnd+preProd+us-east-1@something.com",
+      "partition": "aws"
+    },
+    "preProd.us-west-2": {
+      "accountId": "333333333333",
+      "emailAddress": "mlbStatsFrontEnd+preProd+us-west-2@something.com",
+      "partition": "aws"
+    },
+    "preProd.eu-west-1": {
+      "accountId": "444444444444",
+      "emailAddress": "mlbStatsFrontEnd+preProd+eu-west-1@something.com",
+      "partition": "aws"
+    },
+    "prod.us-east-1": {
+      "accountId": "555555555555",
+      "emailAddress": "mlbStatsFrontEnd+prod+us-east-1@something.com",
+      "partition": "aws"
+    },
+    "prod.us-west-2": {
+      "accountId": "666666666666",
+      "emailAddress": "mlbStatsFrontEnd+prod+us-west-2@something.com",
+      "partition": "aws"
+    },
+    "prod.eu-west-1": {
+      "accountId": "777777777777",
+      "emailAddress": "mlbStatsFrontEnd+prod+eu-west-1@something.com",
+      "partition": "aws"
+    }
+  }
+}
+

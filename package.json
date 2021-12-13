@@ -1,0 +1,79 @@
+{
+  "name": "mlbplayerstatscdk",
+  "version": "1.0.0",
+  "description": "CDK resources for supporting the MLB player stats infrastructure",
+  "main": "lib/app.ts",
+  "scripts": {
+    "test": "node ./node_modules/jest-cli/bin/jest.js --maxWorkers=2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonjs/MLBPlayerStatsCDK.git"
+  },
+  "author": "Brandon Schwartz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonjs/MLBPlayerStatsCDK/issues"
+  },
+  "homepage": "https://github.com/brandonjs/MLBPlayerStatsCDK#readme",
+  "dependencies": {
+    "@aws-cdk/assert": "^2.1.0",
+    "@aws-cdk/aws-apigateway": "^1.135.0",
+    "@aws-cdk/aws-dynamodb": "^1.135.0",
+    "@aws-cdk/aws-iam": "^1.135.0",
+    "@aws-cdk/aws-lambda": "^1.135.0",
+    "@aws-cdk/aws-logs": "^1.135.0",
+    "@aws-cdk/aws-s3": "^1.135.0",
+    "aws-sdk": "^2.518.0",
+    "js-yaml": "^3.12.2"
+  },
+  "devDependencies": {
+    "@aws-cdk/assertions": "^1.135.0",
+    "@types/jest": "^24.9.1",
+    "@types/js-yaml": "^3.12.2",
+    "@types/node": "*",
+    "aws-cdk": "^1.100.0",
+    "aws-sdk-mock": "*",
+    "jest": "^27.4.4",
+    "jest-cli": "^27.4.4",
+    "mocked-env": "^1.2.4",
+    "ts-jest": "^27.0.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.7.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx,ts,tsx}",
+      "!lib/**/tests/**",
+      "!lib/app.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/lib/utils/configuration.ts",
+      "<rootDir>/lib/utils/functions.ts",
+      "<rootDir>/lib/utils/interfaces.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 95,
+        "branches": 70,
+        "functions": 95,
+        "lines": 95
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "roots": [
+      "<rootDir>/test/",
+      "<rootDir>/lib/"
+    ],
+    "testRegex": ".*\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}

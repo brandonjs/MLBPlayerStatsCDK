@@ -1,0 +1,10 @@
+{
+  "app": "npx ts-node lib/app.ts",
+  "amzn": {
+    "cdk-build":{
+      "build": "npm-pretty-much",
+      "version": 1
+    }
+  },
+  "output": "cdk.out"
+}
